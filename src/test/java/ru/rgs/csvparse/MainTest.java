@@ -20,11 +20,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-/**
- * @author ianazarov
- * (c) RGS
- * created 2019-02-19
- */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = Starter.class)
 @AutoConfigureWireMock(port = 8081)
