@@ -12,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.wiremock.AutoConfigureWireMock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import ru.rgs.csvparser.Starter;
-import ru.rgs.csvparser.client.ExternalClient;
 import ru.rgs.csvparser.service.CsvParserService;
 
 import java.nio.file.Files;
@@ -27,9 +26,6 @@ public class MainTest {
 
     @Autowired
     private CsvParserService csvParserService;
-
-    @Autowired
-    private ExternalClient externalClient;
 
     @Test
     void testInput1() {
